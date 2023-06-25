@@ -9,7 +9,6 @@ function App() {
   const [todos, setTodos] = useState([])
 
   useEffect(() => {
-    // Получение сохраненных задач из local storage
     const storedTodos = localStorage.getItem('todos');
     if (storedTodos) {
       setTodos(JSON.parse(storedTodos));
@@ -17,7 +16,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // Сохранение задач в local storage при изменении todos
     localStorage.setItem('todos', JSON.stringify(todos));
   }, [todos]);
 
