@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand';
+    input{
+        width: 400px;
+        height: 20px;
+        padding: 30px;
+        font-size: 18px;
+        border-radius: 12px;
+        position: relative;
+    }
+    button{
+        position: absolute;
+        width: 129px;
+        height: 84px;
+        font-size: 18px;
+        font-weight: 500;
+        top: 91px;
+        right: 610px;
+        border-top-right-radius: 62px;
+        cursor: pointer;
+        &:hover{
+            background-color: green;
+            color: whitesmoke;
+            transition: .4s;
+        }
+    }
+
+    .item-todo{
+        width: 450px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 9px;
+        margin-top: 10px;
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:hover{
+            background-color: rgb(225, 223, 223);
+            transition: .3s;
+        }
+        .remove-task{
+            cursor: pointer;
+        }
+    }
+
+    .strike{
+        text-decoration: line-through;
+    }
+}
