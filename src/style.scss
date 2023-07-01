@@ -12,13 +12,11 @@ body{
         position: relative;
     }
     button{
-        position: absolute;
+        transform: translateX(-9px);
         width: 129px;
         height: 84px;
         font-size: 18px;
         font-weight: 500;
-        top: 91px;
-        right: 610px;
         border-top-right-radius: 62px;
         cursor: pointer;
         &:hover{
